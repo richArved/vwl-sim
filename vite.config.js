@@ -1,11 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'  // <--- NEU
+import tailwindcss from '@tailwindcss/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    tailwindcss(), // <--- NEU: Hier hinzufügen
+    tailwindcss(),
   ],
+  base: '/vwl-sim/', // <--- DIESE ZEILE HINZUFÜGEN (Name deines Repos)
 })
